@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Scramble Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="start-container">
+		<h1>Welcome to the Word Scramble Game</h1>
+		<p>Select a category to start playing:</p>
+		<div class="category-container">
+			<button class="category-btn" data-category="fruits">Fruits</button>
+			<button class="category-btn" data-category="animals">Animals</button>
+			<button class="category-btn" data-category="colors">Colors</button>
+		</div>
+	</div>
+
+	<div id="game-container" style="display: none">
+        <h1 id="scrambled-word"></h1>
+        <p id="category"></p>
+        <img id="word-image" src="images/" alt="">
+        <input type="text" id="guess-input" placeholder="Enter your guess here">
+        <button id="guess-btn">Guess</button>
+        <button id="new-word-btn">New Word</button>
+        <p id="result"></p>
+    </div>
+    
+
+	<script src="script.js"></script>
+</body>
+</html>
